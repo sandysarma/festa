@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:name=".application.Festa"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Festa"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31" >
+        <activity
+            android:name=".TestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.subeventsupdate.ui.SubEventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".location.LocationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Sharepref"
+            android:exported="true" />
+        <activity
+            android:name=".Radiobutton"
+            android:exported="true" />
+        <activity
+            android:name=".Imagepicker"
+            android:exported="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:ignore="WrongManifestParent" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".ui.MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.theme.collectguestlist.BirthdayGuestList"
+            android:exported="false" />
+        <activity
+            android:name=".ui.theme.bookmark.ui.BookMark"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Feedinfo"
+            android:exported="true" />
+        <activity
+            android:name=".ui.Calender1"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Calender"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Splashscreen"
+            android:exported="true"
+            android:theme="@style/Base.Theme.Festa" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.Image"
+            android:exported="true" />
+        <activity
+            android:name=".ui.DashboardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.signup.ui.SignUpVerifyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.signup.ui.SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.logins.ui.SignInVerify"
+            android:exported="true" />
+        <activity
+            android:name=".view.logins.ui.SignInActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_key" />
+    </application>
+
+</manifest>

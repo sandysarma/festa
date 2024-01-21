@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".location.LocationActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/header_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50dp"
+            android:text="Location"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            app:tint="@color/purple_600" />
+
+    </RelativeLayout>
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/verify"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="24dp"
+          android:layout_marginRight="20dp"
+          android:orientation="horizontal"
+          android:layout_below="@+id/relative"
+          app:cardCornerRadius="30dp"
+          app:cardElevation="10dp">
+
+          <androidx.fragment.app.FragmentContainerView
+              android:id="@+id/autoCompleteFrgment"
+              android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+
+      </androidx.cardview.widget.CardView>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_below="@+id/relative">
+
+          <androidx.fragment.app.FragmentContainerView
+              android:id="@+id/map"
+              android:name="com.google.android.gms.maps.SupportMapFragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_alignParentBottom="true"
+          android:layout_marginRight="20dp"
+          android:layout_marginLeft="20dp"
+
+          android:background="@drawable/background_color"
+          android:layout_marginBottom="30dp">
+
+          <TextView
+              android:id="@+id/setLocationTxt"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:background="@color/gray_btn_bg_color"
+              android:text="Set location" />
+
+      </LinearLayout>
+
+
+</RelativeLayout>

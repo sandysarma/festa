@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Festa" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="DatePicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:headerBackground">@color/purple_400</item>
+        <item name="android:numbersTextColor">@color/purple_400</item>
+        <item name="android:numbersSelectorColor">@color/purple_600</item>
+        <item name="colorAccent">@color/purple_400</item>
+    </style>
+
+    <style name="TimePicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/purple_400</item>
+        <item name="android:timePickerMode">spinner</item>
+        <item name="android:format24Hour">false</item>
+        <item name="android:calendarViewShown">false</item>
+    </style>
+
+    <style name="MyratingBar" parent="android:style/Widget.Material.RatingBar">
+        <!--none selected..-->
+        <item name="colorControlNormal">@color/grey</item>
+        <!--selected..-->
+        <item name="colorControlActivated">@color/purple_600</item>
+    </style>
+
+    <style name="Theme.Festa" parent="Base.Theme.Festa" />
+</resources>

@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Festa</string>
+    <string name="event_name">Lorem Ipsum is Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_event">Select event type</string>
+    <string name="event_description">Kotlin is an open-source, statically-typed programming language that supports both object-oriented and functional programming. Kotlin provides similar syntax and concepts from other languages, including C#, Java, and Scala, among many others</string>
+    <string name="terms_conditions"><![CDATA[Terms & conditions]]></string>
+    <string name="unable_to_connect">Unable to connect to the internet please try again</string>
+    <string name="server_error">Server Error</string>
+    <string name="birthdayparty" tools:ignore="StringEscaping">Clearly state the purpose of the invitation, including the birthday person
+        name, age (if relevant), date, time and location of the event. Add any additional important information</string>
+
+    <string name="please_wait">Please Wait...\n</string>
+    <string name="OK">Ok</string>
+    <string name="google_key">AIzaSyA3KVnFOiaKNlhi4hJB8N2pB8tyoe_rRxQ</string>
+
+    <string name="please_select_image">Please select images</string>
+    <string name="do_you_want_to_exit_and_save_this_event_or_not">Do you want to exit and save this event or not</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="create_new_album">Create New Album</string>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "606295880280",
+    "project_id": "festa-71888",
+    "storage_bucket": "festa-71888.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606295880280:android:da3a0470ea2acfe3b8502d",
+        "android_client_info": {
+          "package_name": "com.example.festa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPAJNWvZzI9TwEInGAwjDnXGVnKnz9XrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

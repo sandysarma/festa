@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.Contactfrg">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:visibility="gone"
+        android:background="@drawable/gradientbg"
+        android:orientation="horizontal">
+
+        <!--...............search...........-->
+        <LinearLayout
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_radius_box"
+                android:layout_weight="9"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="22dp"
+                    android:layout_weight=".5"
+                    android:paddingLeft="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/baseline_search_24" />
+                <EditText
+                    android:id="@+id/client_Useremail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+                    android:textFontWeight="400"
+                    android:gravity="center_vertical"
+                    android:textColorHint="@color/black"
+                    android:hint="Search here"
+                    android:inputType="text"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:ems="3"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:paddingLeft="15dp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/baseline_close_24"
+                android:layout_weight="1"
+                app:tint="@color/white" />
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/Button"
+        android:layout_width="150dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/gradientbg"
+        android:text="Get Contact"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:textColor="@color/purple_600" />
+
+    <ListView
+        android:id="@+id/ListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Button" />
+
+</LinearLayout>
